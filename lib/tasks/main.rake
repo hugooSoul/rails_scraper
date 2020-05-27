@@ -11,5 +11,9 @@ namespace :judicial do
         scraper.scraper
 
         Rails.logger.info("Info: URL successful...")
+
+        rescue => e
+            print "Problem detected...\n"
+            print e
     end
 end
