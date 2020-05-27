@@ -7,18 +7,27 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+> 2.6.3
 
-* Configuration
+* How to run the script
 
-* Database creation
+in the seeds.rb file I created a method that gets and URL,
+in case that you gonna use a different URL, it's necessary to change it in the file first.
 
-* Database initialization
+```
+    $ bundle install
+    $ rails db:migrate
+    $ rails db:seed
+```
 
-* How to run the test suite
+* Model
 
-* Services (job queues, cache servers, search engines, etc.)
+I created a model called Document with the following fields
 
-* Deployment instructions
-
-* ...
+```
+    :court
+    :author
+    :defendant
+    :summary
+    :notification
+```
