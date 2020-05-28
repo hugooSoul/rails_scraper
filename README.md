@@ -33,11 +33,11 @@ I created a model called Document with the following fields
 ```
 
 `By Default` it's using Sqlite on DB.
-I Created a copy of `database.yml` with the Mysql necessary values in case you wanna change it.
+I Created a copy of `database.yml` with the Mysql necessary values called `database.yml.mysql` in case you wanna change it. Just need to change user and password by yours.
 
-Also I added the Gem in the `Gemfile`, it's commented, in case of making a switch it's necessaty to
+In the `Gemfile` it's commented the `mysql2`gem in case of making a switch it's necessaty to
 comment `sqlite`gem and uncomment the `mysql2`gem.
-After that, run `bundle install`and `rails db:create`to generate the new DB.
+After that, run `bundle install`and `rails db:create` to generate the new DB.
 
 * First Attempt
 #### Not working anymore
