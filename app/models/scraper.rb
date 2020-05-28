@@ -10,7 +10,9 @@ class Scraper
     end
 
     def parse_url(url)
-        unparsed_page = open(url)
+        uri = URI.parse(url)
+        uri.is_a?(URI::HTTP) && !uri.host.nil?
+        unparsed_page = open(uri)
         Nokogiri::HTML(unparsed_page)
     end
 
