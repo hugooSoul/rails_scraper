@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'httparty', '~> 0.18.0'
 gem 'pry'
+# gem 'mysql2', '~> 0.4.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
