@@ -32,8 +32,15 @@ I created a model called Document with the following fields
     :notification
 ```
 
+`By Default` it's using Sqlite on DB.
+I Created a copy of `database.yml` with the Mysql necessary values in case you wanna change it.
+
+Also I added the Gem in the `Gemfile`, it's commented, in case of making a switch it's necessaty to
+comment `sqlite`gem and uncomment the `mysql2`gem.
+After that, run `bundle install`and `rails db:create`to generate the new DB.
+
 * First Attempt
-##### Not working anymore
+#### Not working anymore
 
 in the seeds.rb file I created a method that gets and URL,
 in case that you gonna use a different URL, it's necessary to change it in the file first.
