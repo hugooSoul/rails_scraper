@@ -11,7 +11,7 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 
-gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'nokogiri', '~> 1.12'
 gem 'httparty', '~> 0.18.0'
 gem 'pry'
 # gem 'mysql2', '~> 0.4.4'
